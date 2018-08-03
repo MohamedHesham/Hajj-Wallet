@@ -3,6 +3,8 @@ import './App.css';
 import web3 from './ethereum/Web3';
 import hajj from './ethereum/Hajj';
 import Gov from './pages/Gov';
+import Store from './pages/Store';
+import User from './pages/User';
 
 
 class App extends Component {
@@ -44,27 +46,9 @@ class App extends Component {
     console.log(this.state.gov);
     return (
       <div>
-        <Gov />
-        {/* <h2>Lottery Club</h2>
-        <p>This Contract is managed by {this.state.manager}.
-        there are currently {this.state.players.length} people entered,
-        competing to win {web3.utils.fromWei(this.state.balance, 'ether')} ether !</p>
-
-        <hr />
-        <form onSubmit={this.onSubmit}>
-          <h4>Let's Play</h4>
-          <div>
-            <label>Amount of Ether to Enter</label>
-            <input value={this.state.value} onChange={e => this.setState({ value: e.target.value })}></input>
-          </div>
-          <button>Enter</button>
-        </form>
-        <hr />
-        <h4>Pick a Winner!</h4>
-        <button onClick={this.onClick}>Pick One</button>
-        <hr />
-        <h1>{this.state.message}</h1> */}
-
+        {/* <Gov /> */}
+        <Store />
+        {/* <User /> */}
       </div>
     );
   }

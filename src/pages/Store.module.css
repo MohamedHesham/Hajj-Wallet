@@ -1,12 +1,19 @@
+body {
+    text-align: center;
+}
 .contaner {
     display: flex;
     flex-wrap: nowrap;
+    height: 590px;
+    background-image: url('./../assets/Banner.svg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
 }
 .Gov {
     text-align: center;
     font-family: sans-serif;
     flex-basis: 50%;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .Gov h1 {
     color: #323232;
@@ -44,4 +51,10 @@ button:hover {
 }
 .image img {
     width: 100%;
+}
+#my-qr-code {
+    margin-top: 50px;
+}
+.code{
+    margin-top: 50px;
 }
